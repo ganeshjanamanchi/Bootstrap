@@ -34,7 +34,7 @@
           <li class="nav-items"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
         </ul>
         <span class="navbar-text">
-          <a data-toggle="modal" data-target="#loginModal"><span class="fa fa-sign-in">Login</span></a>
+          <span id="loginModalButton" class="fa fa-sign-in">Login</span>
         </span>
       </div>
     </div>
@@ -83,12 +83,12 @@
                   <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="btn-block col-sm align-self-center">
-                  <a data-toggle="modal" data-target="#reserveModal"><button class="btn btn-warning btn-block nav-link" type="button" name="button">Reserve Table</button></a>
+                  <button id="myModalButton" class="btn btn-warning btn-block nav-link" type="button" name="button">Reserve Table</button>
                 </div>
             </div>
         </div>
     </header>
-
+<!-- Reserve table model -->
     <div class="modal fade" id="reserveModal" role="dialog">
       <div class="modal-dialog" role="content">
         <div class="modal-content">
@@ -142,14 +142,14 @@
             </div>
           </div>
             </div>
-            <div class="modal-footer">
               <div class="form-group-row">
               <div class="form-inline">
                 <br>
+                <div class="offset-3">
                 <button type="button" class="btn btn-default " data-dismiss="modal">Cancel</button>
                 <button style="margin:10px" type="submit" class="btn btn-primary">Reserve</button>
               </div>
-            </div>
+              </div>
             </div>
 
           </form>
